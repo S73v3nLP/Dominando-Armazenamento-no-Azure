@@ -12,3 +12,6 @@
   <img width="831" height="836" alt="Image" src="https://github.com/user-attachments/assets/e7667d43-587e-4a04-b84c-c990e11e8c08" />
 
 2. Na página Contas de armazenamento, clique em _Create_.
+<img width="904" height="656" alt="Image" src="https://github.com/user-attachments/assets/ba01a9a7-fa22-44e3-b494-316c2b982a57" />
+
+3. Na guia _Basics_, forneça as informações essenciais para a sua conta de armazenamento. A imagem a seguir mostra uma configuração padrão com as propriedades básicas de uma nova _Storage Account_. Clique em _Next_
