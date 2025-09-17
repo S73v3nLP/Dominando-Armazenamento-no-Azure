@@ -1,5 +1,5 @@
 ## Dominando-Armazenamento-no-Azure
-### Lab do Curso AZ900 da DIO.me - Criação de Storage Account, Migration e uso do AzCopy
+### Lab do Curso AZ900 da DIO.me - Criação de Storage Account e uso do AzCopy
 
 # Criando uma _Storage Account_
 
