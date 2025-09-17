@@ -30,4 +30,49 @@
 10. _Storage Account_ criada:
   <img width="1151" height="588" alt="image" src="https://github.com/user-attachments/assets/0dc3da6d-31e9-46c5-ba7a-424832c7b089" />
 
+# Utilizando **AzCopy** para copiar dados de uma fonte local para uma conta de armazenamento do Azure
+
+## AzCopy é um utilitário de linha de comando que você pode usar para copiar blobs ou arquivos de ou para uma conta de armazenamento. 
+
+1. Baixe e execute o AzCopy
+  <img width="875" height="436" alt="image" src="https://github.com/user-attachments/assets/2591fbf9-47e9-4b4d-ad91-45a0305c0223" />
+
+
+2. Como boa prática salve o arquivo em uma pasta exclusiva para o AzCopy
+3. Vamos usar a opção de fornecer um **TOKEN SAS** para cada URL de origem
+   ```
+   http://<storage-account-name>.blob.core.windows.net/<container-name><SAS-token>
+  
+## Carregar arquivos no Armazenamento de Blobs do Azure usando o AzCopy
+
+1. No portal do Azure vá em _Storage Accounts_ 
+  <img width="1191" height="701" alt="image" src="https://github.com/user-attachments/assets/2eb9d87f-716e-49c4-b163-f25c9ed01658" />
+
+2. clique na _Storage Account_ que pretende utilizar
+  <img width="1132" height="543" alt="image" src="https://github.com/user-attachments/assets/f3626384-975d-4dfe-a25c-020855814668" />
+
+3. Clique em _Containers_ e acesse o seu. Caso não tenha um, crie
+4. Clique em _Shared Acces Tokens_
+  <img width="1161" height="743" alt="image" src="https://github.com/user-attachments/assets/7916f454-42fa-43b7-8eb5-924f4a7d04da" />
+
+5. Agora vá em _Permissions_ e habilite todas
+  <img width="936" height="715" alt="image" src="https://github.com/user-attachments/assets/a5a7703f-7d45-43d9-9b35-5aedfc7b0177" />
+
+6. Clique em _Generate SAS token and URL_
+  
+7. Copie o código que está em _Blob SAS URL_
+  <img width="1601" height="809" alt="image" src="https://github.com/user-attachments/assets/ade0697b-300a-4416-b610-67a476a44f28" />
+
+8. Em sua máquina local abra o CMD e vá para a pasta aonde oexecutável do AzCopy está guardado:
+    <img width="1316" height="697" alt="image" src="https://github.com/user-attachments/assets/849c1a1e-b682-40ea-bd14-015942b50241" />
+
+9. Execute o comando
+   Azcopy copy "C:\copia" <URL SAS criada> --recursive=true
+10. Ao final ele informa quantos arquivos e se ocorreu tudo bem
+  <img width="1503" height="875" alt="image" src="https://github.com/user-attachments/assets/570a17b8-3ed2-41fe-b36e-71f3125068da" />
+
+  <img width="1394" height="627" alt="image" src="https://github.com/user-attachments/assets/eafbc9ba-4a30-4ce3-b584-09eaef82f7e2" />
+
+
+
 
